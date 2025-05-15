@@ -35,8 +35,12 @@ struct ProductCard: View {
                 .foregroundColor(.secondary)
         }
         .padding()
+        .frame(maxWidth: 350)
         .background(Color.white)
         .cornerRadius(12)
         .shadow(radius: 4)
     }
+}
+#Preview {
+    ContentView()
 }

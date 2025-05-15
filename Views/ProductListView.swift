@@ -22,3 +22,6 @@ struct ProductListView: View {
         .navigationTitle("Selecciona un producto")
     }
 }
+#Preview {
+    ContentView()
+}
