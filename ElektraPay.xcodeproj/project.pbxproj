@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FC0215AB2DD6689D0008CB35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0215AA2DD6689D0008CB35 /* ContentView.swift */; };
+		FC0215B92DD66B730008CB35 /* ElektraPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0215B82DD66B730008CB35 /* ElektraPay.swift */; };
+		FC0215BB2DD66B9C0008CB35 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0215BA2DD66B9C0008CB35 /* APIService.swift */; };
+		FC0215BD2DD66C690008CB35 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0215BC2DD66C690008CB35 /* ViewModel.swift */; };
+		FC0215C32DD67E360008CB35 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0215C22DD67E360008CB35 /* ProductCardView.swift */; };
+		FC0215C52DD687C60008CB35 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0215C42DD687C60008CB35 /* ProductListView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FC02153A2DD65FD00008CB35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +36,30 @@
 		FC0215282DD65FCE0008CB35 /* ElektraPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektraPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0215392DD65FD00008CB35 /* ElektraPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElektraPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0215432DD65FD00008CB35 /* ElektraPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElektraPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0215AA2DD6689D0008CB35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC0215B82DD66B730008CB35 /* ElektraPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElektraPay.swift; sourceTree = "<group>"; };
+		FC0215BA2DD66B9C0008CB35 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FC0215BC2DD66C690008CB35 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FC0215C22DD67E360008CB35 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		FC0215C42DD687C60008CB35 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FC0215C72DD690150008CB35 /* Exceptions for "ElektraPay" folder in "ElektraPay" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FC0215272DD65FCE0008CB35 /* ElektraPay */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FC02152A2DD65FCE0008CB35 /* ElektraPay */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FC0215C72DD690150008CB35 /* Exceptions for "ElektraPay" folder in "ElektraPay" target */,
+			);
 			path = ElektraPay;
 			sourceTree = "<group>";
 		};
@@ -75,6 +103,10 @@
 		FC02151F2DD65FCE0008CB35 = {
 			isa = PBXGroup;
 			children = (
+				FC0215B22DD668F90008CB35 /* Models */,
+				FC0215B52DD669240008CB35 /* Networking */,
+				FC0215B42DD669170008CB35 /* ViewModels */,
+				FC0215B32DD669020008CB35 /* Views */,
 				FC02152A2DD65FCE0008CB35 /* ElektraPay */,
 				FC02153C2DD65FD00008CB35 /* ElektraPayTests */,
 				FC0215462DD65FD00008CB35 /* ElektraPayUITests */,
@@ -90,6 +122,40 @@
 				FC0215432DD65FD00008CB35 /* ElektraPayUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0215B22DD668F90008CB35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC0215B82DD66B730008CB35 /* ElektraPay.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC0215B32DD669020008CB35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC0215AA2DD6689D0008CB35 /* ContentView.swift */,
+				FC0215C22DD67E360008CB35 /* ProductCardView.swift */,
+				FC0215C42DD687C60008CB35 /* ProductListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC0215B42DD669170008CB35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FC0215BC2DD66C690008CB35 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FC0215B52DD669240008CB35 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FC0215BA2DD66B9C0008CB35 /* APIService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0215BD2DD66C690008CB35 /* ViewModel.swift in Sources */,
+				FC0215AB2DD6689D0008CB35 /* ContentView.swift in Sources */,
+				FC0215C52DD687C60008CB35 /* ProductListView.swift in Sources */,
+				FC0215BB2DD66B9C0008CB35 /* APIService.swift in Sources */,
+				FC0215C32DD67E360008CB35 /* ProductCardView.swift in Sources */,
+				FC0215B92DD66B730008CB35 /* ElektraPay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +466,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ElektraPay/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElektraPay/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +505,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ElektraPay/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElektraPay/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
